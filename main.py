@@ -76,7 +76,7 @@ async def on_message(message):
                 await message.channel.send('$delete')
         except Exception as e:
             print(e)
-    elif message.content.startswith('!blacklist'):
+    elif message.content.startswith('!blacklist') and message.author.id == client.user.id:
         try:
             user_id = int(message.content.split(' ')[1].replace('<@', '').replace('>', '').replace('!', ''))
             member = message.guild.get_member(user_id)
@@ -89,7 +89,7 @@ async def on_message(message):
         except:
             await message.channel.send("Invalid syntax. Please use `!blacklist @user`.")
     
-    elif message.content.startswith('!unblacklist'):
+    elif message.content.startswith('!unblacklist') and message.author.id == client.user.id:
         try:
             user_id = int(message.content.split(' ')[1].replace('<@', '').replace('>', '').replace('!', ''))
             member = message.guild.get_member(user_id)
