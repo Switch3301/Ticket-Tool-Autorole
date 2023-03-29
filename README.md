@@ -1,5 +1,5 @@
 # Ticket-Tool-Autorole
-This is used in major shop servers like ligit and more.This simply checks if person who made the ticket has vanity in status or not!
+This is used in major shop servers like ligit and more.This simply checks if person who made the ticket has vanity in status or not!Just a raw code which i made to use i didnt care much of it until people started selling this easy shit
 
 # How to use
 Delete all the versions of discord,example : discord,discord.py,py-cordand install discord.py-self using the command pip install discord.py-self or pip3.
